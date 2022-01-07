@@ -16,7 +16,7 @@ func TestAssets(t *testing.T) {
 	assetsEntity.JSAssets.Add("jquery.min.js")
 	assetsEntity.AddCustomizedJSAssets("http://myhost/my.assets.js")
 
-	const host = "https://github.com/bhojpur/charts/assets/"
+	const host = "https://static.bhojpur.net/charts/"
 
 	assetsEntity.Validate(host)
 	assert.Equal(t, []string{host + "echarts.min.js", host + "jquery.min.js"}, assetsEntity.JSAssets.Values)

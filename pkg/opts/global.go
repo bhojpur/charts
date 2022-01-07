@@ -34,7 +34,7 @@ type Initialization struct {
 	ChartID string
 
 	// Assets host
-	AssetsHost string `default:"https://github.com/bhojpur/charts/assets/"`
+	AssetsHost string `default:"https://static.bhojpur.net/charts/"`
 
 	// Theme of chart
 	Theme string `default:"white"`
