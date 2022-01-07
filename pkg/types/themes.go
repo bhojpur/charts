@@ -2,7 +2,6 @@ package types
 
 // Theme Type contains string representations of theme types.
 const (
-	ThemeBhojpuri      = "bhojpuri"
 	ThemeChalk         = "chalk"
 	ThemeEssos         = "essos"
 	ThemeInfographic   = "infographic"
