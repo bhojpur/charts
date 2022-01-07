@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version="v0.0.1"
+version="v0.0.4"
 
 function pre_check() {
   info=$(diff -u <(echo -n) <(format))
