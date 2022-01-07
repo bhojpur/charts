@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-const host = "https://charts.bhojpur.net/assets/"
+const host = "https://static.bhojpur.net/charts/"
 
 func TestBarAssetsBeforeRender(t *testing.T) {
 	bar := NewBar()
