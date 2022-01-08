@@ -42,7 +42,7 @@ func (r *pageRender) Render(w io.Writer) error {
 		fn()
 	}
 
-	contents := []string{tpls.HeaderTpl, tpls.BaseTpl, tpls.PageTpl}
+	contents := []string{tpls.HeaderTpl, tpls.BaseTpl, tpls.PageTpl, tpls.FooterTpl}
 	tpl := MustTemplate(ModPage, contents)
 
 	var buf bytes.Buffer
@@ -72,9 +72,8 @@ func (r *chartRender) Render(w io.Writer) error {
 		fn()
 	}
 
-	contents := []string{tpls.HeaderTpl, tpls.BaseTpl, tpls.ChartTpl}
+	contents := []string{tpls.HeaderTpl, tpls.BaseTpl, tpls.ChartTpl, tpls.FooterTpl}
 	tpl := MustTemplate(ModChart, contents)
-
 	var buf bytes.Buffer
 	if err := tpl.ExecuteTemplate(&buf, ModChart, r.c); err != nil {
 		return err

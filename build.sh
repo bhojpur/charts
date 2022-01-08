@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version="v0.0.4"
+version="v0.0.5"
 
 function pre_check() {
   info=$(diff -u <(echo -n) <(format))
@@ -16,7 +16,8 @@ function format() {
 }
 
 function test() {
-    go test -v ./...
+    go test -v ./pkg/charts/...
+    go test -v ./pkg/opts/...
 }
 
 function release() {

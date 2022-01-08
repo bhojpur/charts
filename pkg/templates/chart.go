@@ -1,7 +1,7 @@
 package templates
 
 var ChartTpl = `
-{{- define "base" }}
+{{- define "chart" }}
 <div class="container">
     <div class="item" id="{{ .ChartID }}" style="width:{{ .Initialization.Width }};height:{{ .Initialization.Height }};"></div>
 </div>
