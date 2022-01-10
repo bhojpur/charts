@@ -1,6 +1,8 @@
 # Bhojpur Charts - Data Processing Engine
 The Bhojpur Charts is a data visualization software-as-a-service product used as a primary Charting Engine within the Bhojpur.NET Platform ecosystem. It relies on the client-side libraries of the [Apache eCharts](https://echarts.apache.org/).
 
+[![Build status](https://badge.buildkite.com/d310559b033d9dc2c41668b20c90e9c0c3d6543ce31c8792ae.svg)](https://buildkite.com/bhojpur/charts)
+
 ### Installation
 
 To get the Bhojpur Charts
